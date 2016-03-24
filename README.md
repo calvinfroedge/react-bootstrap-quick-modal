@@ -44,7 +44,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "bool"
     },
     "required": false,
-    "description": "",
+    "description": "whether or not the component should be shown on load",
     "defaultValue": {
       "value": "true",
       "computed": false
@@ -55,7 +55,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "func"
     },
     "required": false,
-    "description": "",
+    "description": "called when the modal is closed",
     "defaultValue": {
       "value": "()=>{ console.info('Provide onHide for callback on hide.'); }",
       "computed": false
@@ -66,7 +66,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "string"
     },
     "required": false,
-    "description": "",
+    "description": "the title for the modal",
     "defaultValue": {
       "value": "'Modal title'",
       "computed": false
@@ -77,7 +77,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "string"
     },
     "required": false,
-    "description": "",
+    "description": "text for close button",
     "defaultValue": {
       "value": "'Close'",
       "computed": false
@@ -88,7 +88,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "func"
     },
     "required": false,
-    "description": "",
+    "description": "called when confirm button is clicked",
     "defaultValue": {
       "value": "()=>{ console.info('Provide onConfirm for callback on confirm.'); }",
       "computed": false
@@ -99,7 +99,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "string"
     },
     "required": false,
-    "description": "",
+    "description": "text for confirm button",
     "defaultValue": {
       "value": "'Confirm'",
       "computed": false
@@ -110,7 +110,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "string"
     },
     "required": false,
-    "description": "",
+    "description": "Bootstrap style for confirm button",
     "defaultValue": {
       "value": "'primary'",
       "computed": false
@@ -121,7 +121,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "bool"
     },
     "required": false,
-    "description": "",
+    "description": "Should confirm be disabled by default?",
     "defaultValue": {
       "value": "false",
       "computed": false
@@ -132,7 +132,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "bool"
     },
     "required": false,
-    "description": "",
+    "description": "Hide confirm button by default",
     "defaultValue": {
       "value": "false",
       "computed": false
@@ -143,7 +143,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "func"
     },
     "required": false,
-    "description": "",
+    "description": "This method will be bound to the context",
     "defaultValue": {
       "value": "()=>{}",
       "computed": false
@@ -172,7 +172,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "bool"
     },
     "required": false,
-    "description": "",
+    "description": "whether or not the component should be shown on load",
     "defaultValue": {
       "value": "false",
       "computed": false
@@ -183,7 +183,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "func"
     },
     "required": false,
-    "description": "",
+    "description": "called when the modal is closed",
     "defaultValue": {
       "value": "()=>{ console.info(\"Provide onHide to have a callback when modal closes.\") }",
       "computed": false
@@ -194,7 +194,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "string"
     },
     "required": false,
-    "description": "",
+    "description": "Custom class name used on the button",
     "defaultValue": {
       "value": "''",
       "computed": false
@@ -205,7 +205,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "string"
     },
     "required": false,
-    "description": "",
+    "description": "Bootstrap class to be used on the button",
     "defaultValue": {
       "value": "'primary'",
       "computed": false
@@ -216,7 +216,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "string"
     },
     "required": false,
-    "description": "",
+    "description": "Button size",
     "defaultValue": {
       "value": "'sm'",
       "computed": false
@@ -227,7 +227,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "object"
     },
     "required": false,
-    "description": "",
+    "description": "Custom css to be applied to the button",
     "defaultValue": {
       "value": "{}",
       "computed": false
@@ -238,7 +238,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "string"
     },
     "required": false,
-    "description": "",
+    "description": "Text to show in the button",
     "defaultValue": {
       "value": "'Launch Modal'",
       "computed": false
@@ -249,7 +249,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "any"
     },
     "required": false,
-    "description": "",
+    "description": "An alternate button to show",
     "defaultValue": {
       "value": "false",
       "computed": false
@@ -260,7 +260,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "element"
     },
     "required": false,
-    "description": "",
+    "description": "component to be rendered inside the modal",
     "defaultValue": {
       "value": "'<div>component will be rendered here</div>'",
       "computed": false
@@ -271,7 +271,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "string"
     },
     "required": false,
-    "description": "",
+    "description": "The title displayed in the modal",
     "defaultValue": {
       "value": "'title'",
       "computed": false
@@ -282,7 +282,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "string"
     },
     "required": false,
-    "description": "",
+    "description": "Text to be shown in the close button",
     "defaultValue": {
       "value": "'Close'",
       "computed": false
@@ -293,7 +293,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "bool"
     },
     "required": false,
-    "description": "",
+    "description": "Should the confirm button of the modal be hidden?",
     "defaultValue": {
       "value": "false",
       "computed": false
@@ -304,7 +304,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "string"
     },
     "required": false,
-    "description": "",
+    "description": "Text to be shown in the confirm button",
     "defaultValue": {
       "value": "'Submit'",
       "computed": false
@@ -315,7 +315,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "string"
     },
     "required": false,
-    "description": "",
+    "description": "Bootstrap style for confirm button",
     "defaultValue": {
       "value": "''",
       "computed": false
@@ -326,7 +326,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "bool"
     },
     "required": false,
-    "description": "",
+    "description": "Should confirm be disabled by default?",
     "defaultValue": {
       "value": "false",
       "computed": false
@@ -337,7 +337,7 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "name": "func"
     },
     "required": false,
-    "description": "",
+    "description": "A method which will have it's context bound to the modal and can be used to manage its state from other components",
     "defaultValue": {
       "value": "()=>{}",
       "computed": false

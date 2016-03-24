@@ -67,16 +67,46 @@ class ModalShortcut extends React.Component {
 }
 
 ModalShortcut.propTypes = {
-  show: React.PropTypes.bool, // whether or not the component should be shown on load
-  onHide: React.PropTypes.func, // called when the modal is closed
-  title: React.PropTypes.string, // the title for the modal
-  closeText: React.PropTypes.string, // text for close button
-  onConfirm: React.PropTypes.func, // called when confirm button is clicked
-  confirmText: React.PropTypes.string, // text for confirm button
-  confirmBSStyle: React.PropTypes.string, // Bootstrap style for confirm button
-  confirmDisabled: React.PropTypes.bool, // Should confirm be disabled by default?
-  hideConfirm: React.PropTypes.bool, // Hide confirm button by default
-  stateManager: React.PropTypes.func // This method will be bound to the context
+  /**
+   * whether or not the component should be shown on load
+   */
+  show: React.PropTypes.bool,
+  /**
+   * called when the modal is closed
+   */
+  onHide: React.PropTypes.func,
+  /**
+   * the title for the modal
+   */
+  title: React.PropTypes.string,
+  /**
+   * text for close button
+   */
+  closeText: React.PropTypes.string,
+  /**
+   * called when confirm button is clicked
+   */
+  onConfirm: React.PropTypes.func,
+  /**
+   * text for confirm button
+   */
+  confirmText: React.PropTypes.string,
+  /**
+   * Bootstrap style for confirm button
+   */
+  confirmBSStyle: React.PropTypes.string,
+  /**
+   * Should confirm be disabled by default?
+   */
+  confirmDisabled: React.PropTypes.bool,
+  /**
+   * Hide confirm button by default
+   */
+  hideConfirm: React.PropTypes.bool,
+  /**
+   * This method will be bound to the context
+   */
+  stateManager: React.PropTypes.func 
 }
 
 ModalShortcut.defaultProps = {

@@ -75,23 +75,71 @@ ModalLaunchButton.propTypes = {
   /*Container properties*/
   style: React.PropTypes.object,
   /*Button properties*/
-  show: React.PropTypes.bool, // whether or not the component should be shown on load
-  onHide: React.PropTypes.func, // called when the modal is closed
-  buttonClassName: React.PropTypes.string, //Custom class name used on the button
-  buttonBSStyle: React.PropTypes.string, //Bootstrap class to be used on the button
-  buttonBSSize: React.PropTypes.string, //Button size
-  buttonStyle: React.PropTypes.object, //Custom css to be applied to the button
-  buttonText: React.PropTypes.string, //Text to show in the button
-  alternateButtonElement: React.PropTypes.any, //An alternate button to show
+  /**
+   * whether or not the component should be shown on load
+   */
+  show: React.PropTypes.bool,
+  /**
+   * called when the modal is closed
+   */
+  onHide: React.PropTypes.func,
+  /**
+   * Custom class name used on the button
+   */
+  buttonClassName: React.PropTypes.string, 
+  /**
+   * Bootstrap class to be used on the button
+   */
+  buttonBSStyle: React.PropTypes.string,
+  /**
+   * Button size
+   */
+  buttonBSSize: React.PropTypes.string, 
+  /**
+   * Custom css to be applied to the button
+   */
+  buttonStyle: React.PropTypes.object, 
+  /**
+   * Text to show in the button
+   */
+  buttonText: React.PropTypes.string, 
+  /**
+   * An alternate button to show
+   */
+  alternateButtonElement: React.PropTypes.any, 
   /*Modal properties*/
-  component: React.PropTypes.element, // component to be rendered inside the modal
-  title: React.PropTypes.string, //The title displayed in the modal
-  closeText: React.PropTypes.string, //Text to be shown in the close button
-  hideConfirm: React.PropTypes.bool, //Should the confirm button of the modal be hidden?
-  confirmText: React.PropTypes.string, //Text to be shown in the confirm button
-  confirmBSStyle: React.PropTypes.string, //Bootstrap style for confirm button
-  confirmDisabled: React.PropTypes.bool, //Should confirm be disabled by default?
-  modalStateManager: React.PropTypes.func //A method which will have it's context bound to the modal and can be used to manage its state from other components
+  /**
+   * component to be rendered inside the modal
+   */
+  component: React.PropTypes.element, 
+  /**
+   * The title displayed in the modal
+   */
+  title: React.PropTypes.string,
+  /**
+   * Text to be shown in the close button
+   */
+  closeText: React.PropTypes.string,
+  /**
+   * Should the confirm button of the modal be hidden?
+   */
+  hideConfirm: React.PropTypes.bool,
+  /**
+   * Text to be shown in the confirm button
+   */
+  confirmText: React.PropTypes.string,
+  /**
+   * Bootstrap style for confirm button
+   */
+  confirmBSStyle: React.PropTypes.string, 
+  /**
+   * Should confirm be disabled by default?
+   */
+  confirmDisabled: React.PropTypes.bool,
+  /**
+   * A method which will have it's context bound to the modal and can be used to manage its state from other components
+   */
+  modalStateManager: React.PropTypes.func 
 }
 
 ModalLaunchButton.defaultProps = {

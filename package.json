@@ -1,6 +1,6 @@
 {
   "name": "react-bootstrap-quick-modal",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React / Bootstrap modals with fewer keystrokes",
   "main": "lib/index.js",
   "jsnext:main": "es/index.js",
@@ -11,7 +11,7 @@
     "build:es": "cross-env BABEL_ENV=es babel src --out-dir es",
     "build:umd": "cross-env BABEL_ENV=commonjs NODE_ENV=development webpack src/index.js dist/rbqm.js",
     "build:umd:min": "cross-env BABEL_ENV=commonjs NODE_ENV=production webpack src/index.js dist/rbqm.min.js",
-    "docs": "./node_modules/react-docgen/bin/react-docgen.js --pretty src | ./make-docs.js",
+    "docs": "./make-docs.js",
     "build": "npm run docs && npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min",
     "prepublish": "npm run clean && npm run build"
   },
