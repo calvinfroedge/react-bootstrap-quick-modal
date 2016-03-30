@@ -46,4 +46,15 @@ describe('Modal', ()=>{
     modalManager.setState({modalShown: false});
     expect(modalManager.state.modalShown).toBe(false);
   });
+
+  it('Does not hide the modal on confirm if hideOnConfirm is set to false', ()=>{
+    document.body.innerHTML = '<div id="root"></div>';
+    let manager;
+    let assignManager = (modal)=>{
+      manager = modal;
+    }
+    ReactDOM.render(<Modal stateManager={assignManager} hideOnConfirm={false}><div>test</div></Modal>, document.getElementById('root'));
+    manager.onConfirm();
+    expect(manager.state.modalShown).toBe(true);
+  });
 })

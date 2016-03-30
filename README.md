@@ -138,6 +138,17 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
       "computed": false
     }
   },
+  "hideOnConfirm": {
+    "type": {
+      "name": "bool"
+    },
+    "required": false,
+    "description": "Should confirmation hide the modal?",
+    "defaultValue": {
+      "value": "true",
+      "computed": false
+    }
+  },
   "stateManager": {
     "type": {
       "name": "func"
@@ -296,6 +307,17 @@ Auto generated using [React Docgen](https://github.com/reactjs/react-docgen).
     "description": "Should the confirm button of the modal be hidden?",
     "defaultValue": {
       "value": "false",
+      "computed": false
+    }
+  },
+  "hideOnConfirm": {
+    "type": {
+      "name": "bool"
+    },
+    "required": false,
+    "description": "Should the modal be hidden on confirm?",
+    "defaultValue": {
+      "value": "true",
       "computed": false
     }
   },

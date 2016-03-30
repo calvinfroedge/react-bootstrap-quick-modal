@@ -39,8 +39,8 @@ class ModalLaunchButton extends React.Component {
     let containerProps = {style: props.style};
 
     //Set modal props
-    let { title, style, hideConfirm, confirmText, confirmDisabled } = props;
-    let modalProps = {title, style, hideConfirm, confirmText, confirmDisabled};
+    let { title, style, hideConfirm, hideOnConfirm, confirmText, confirmDisabled } = props;
+    let modalProps = {title, style, hideConfirm, hideOnConfirm, confirmText, confirmDisabled};
     modalProps.onHide = ::this.close;
     modalProps.onConfirm = ::this.confirm;
     modalProps.show = this.state.modalShown;
@@ -125,6 +125,10 @@ ModalLaunchButton.propTypes = {
    */
   hideConfirm: React.PropTypes.bool,
   /**
+   * Should the modal be hidden on confirm?
+   */
+  hideOnConfirm: React.PropTypes.bool,
+  /**
    * Text to be shown in the confirm button
    */
   confirmText: React.PropTypes.string,
@@ -159,6 +163,7 @@ ModalLaunchButton.defaultProps = {
   title: 'title',
   closeText: 'Close',
   hideConfirm: false,
+  hideOnConfirm: true,
   confirmText: 'Submit',
   confirmDisabled: false,
   confirmBSStyle: '',

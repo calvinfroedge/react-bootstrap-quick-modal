@@ -31,7 +31,7 @@ class ModalShortcut extends React.Component {
   }
 
   onConfirm(){
-    this.setState({modalShown: false});
+    if(this.props.hideOnConfirm == true) this.setState({modalShown: false});
 
     if(this.props.onConfirm) this.props.onConfirm();
   }
@@ -104,6 +104,10 @@ ModalShortcut.propTypes = {
    */
   hideConfirm: React.PropTypes.bool,
   /**
+   * Should confirmation hide the modal?
+   */
+  hideOnConfirm: React.PropTypes.bool,
+  /**
    * This method will be bound to the context
    */
   stateManager: React.PropTypes.func 
@@ -115,6 +119,7 @@ ModalShortcut.defaultProps = {
   title: 'Modal title',
   closeText: 'Close',
   onConfirm: ()=>{ console.info('Provide onConfirm for callback on confirm.'); },
+  hideOnConfirm: true,
   confirmText: 'Confirm',
   confirmBSStyle: 'primary',
   confirmDisabled: false,
