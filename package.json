@@ -1,6 +1,6 @@
 {
   "name": "react-bootstrap-quick-modal",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "React / Bootstrap modals with fewer keystrokes",
   "main": "lib/index.js",
   "jsnext:main": "es/index.js",

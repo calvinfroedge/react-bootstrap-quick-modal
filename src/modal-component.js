@@ -21,17 +21,21 @@ class ModalShortcut extends React.Component {
   }
 
   componentWillReceiveProps(nextProps){
-    if(nextProps.show) this.setState({modalShown: nextProps.show});
+    if(nextProps.show != this.state.modalShown) this.setState({modalShown: nextProps.show});
+  }
+
+  close(){
+    this.setState({modalShown: false});
   }
 
   onHide(){
-    this.setState({modalShown: false});
+    this.close();
 
     if(this.props.onHide) this.props.onHide();
   }
 
   onConfirm(){
-    if(this.props.hideOnConfirm == true) this.setState({modalShown: false});
+    if(this.props.hideOnConfirm == true) this.close();
 
     if(this.props.onConfirm) this.props.onConfirm();
   }
